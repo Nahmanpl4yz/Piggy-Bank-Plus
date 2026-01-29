@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: linear-gradient(#1b1b2f, #0a0a14);
+  color: white;
+  font-family: system-ui;
+}
+
+#topbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #121225;
+}
+
+button {
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #26264a;
+  color: white;
+  font-size: 16px;
+}
+
+.screen {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#piggy {
+  width: 180px;
+  transition: transform 0.15s;
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+  100% { transform: rotate(0); }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+#progress {
+  width: 80%;
+  height: 14px;
+  background: #333;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+#dailyBar {
+  height: 100%;
+  width: 0%;
+  background: lime;
+  border-radius: 10px;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
